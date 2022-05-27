@@ -11,9 +11,10 @@
     }
     
     .flex-1 {
+        width: auto;
         display: flex;
         flex-direction: row;
-        margin-left: 80%;
+        margin-left: 1%;
     }
     
     .button {
