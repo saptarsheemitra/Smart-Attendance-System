@@ -4,7 +4,6 @@ import face_recognition
 import os
 from datetime import datetime
 import requests
-import pandas
 
 url = 'https://www.w3schools.com/python/demopage.php'
 
@@ -40,7 +39,6 @@ def faceEncodings(images):
 
 def attendance(roll,name,branch):
 
-    #if the file is not there..it wll create a new file ggwp
     with open(file_name, 'r+') as f:
         myDataList = f.readlines()
         nameList = []
@@ -48,7 +46,6 @@ def attendance(roll,name,branch):
             entry = line.split(',')
             nameList.append(entry[0])
         if name not in nameList:
-            # time_now = datetime.now()
             tStr = time_now.strftime('%H:%M:%S')
             dStr = time_now.strftime('%d/%m/%Y')
             d1 = {
@@ -59,11 +56,11 @@ def attendance(roll,name,branch):
                 "Date" : dStr
             }
             print(d1)
-            # requests.post(url, data = d1)
+            # requests.post(url, data = d1)   #uncomment to send data to server
             f.writelines(f'\n{name}, Roll: {roll}, Branch: {branch}, Time: {tStr}, Date: {dStr}')
 
 encodeListKnown = faceEncodings(images)
-# print(encodeListKnown)
+
 
 print('All Encodings Complete!!!')
 
@@ -81,15 +78,12 @@ while True:
     for encodeFace, faceLoc in zip(encodesCurrentFrame, facesCurrentFrame):
         matches = face_recognition.compare_faces(encodeListKnown, encodeFace)
         faceDis = face_recognition.face_distance(encodeListKnown, encodeFace)
-        # print(faceDis)
         matchIndex = np.argmin(faceDis)
 
         if matches[matchIndex]:
             roll = s_details[matchIndex][0]
             name = s_details[matchIndex][1].upper()
             branch = s_details[matchIndex][2].upper()
-            # print(name)
-            # print(matchIndex)
             y1, x2, y2, x1 = faceLoc
             y1, x2, y2, x1 = y1 * 2, x2 * 2, y2 * 2, x1 * 2
             cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
@@ -99,10 +93,6 @@ while True:
 
     cv2.imshow('Webcam', frame)
     if cv2.waitKey(1) == 13:
-        # time_now = datetime.now()
-        # file_name = time_now.strftime('%d_%m_%Y.csv')
-        # file = pandas.read_csv(file_name)
-        # file.to_html("StudentTable.html")
         break
 
 cap.release()
