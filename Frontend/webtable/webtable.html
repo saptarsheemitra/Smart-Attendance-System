@@ -57,7 +57,15 @@
         var yyyy = today.getFullYear();
         today = yyyy + '-' + mm + '-' + dd;
 
-        fetchres = fetch("http://localhost/mark/getall")
+        fetchres = fetch("http://192.168.65.27/mark/getall", {
+            mode: 'cors',
+            headers: {
+                'Access-Control-Allow-Origin': '*'
+            }
+        })
+        fetchres.then(result => {
+            console.log(result);
+        })
         document.getElementsByClassName("daterange")[0].value = today
         input = document.getElementsByClassName("daterange")[0].value;
         table = document.getElementsByClassName("table")[0];
