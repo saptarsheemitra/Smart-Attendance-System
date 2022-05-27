@@ -16,7 +16,7 @@
         <h5 style="  margin-bottom: 2px; margin-top: 30px;margin-right: 6%; width: auto;">*Select date to view attendance</h5>
         <div class="flex-1">
             <input type="date" name="daterange" placeholder="01/01/2018 " class="daterange" />
-            <input type="submit" value="Filter" class="button">
+            <input type="submit" value="Filter" class="button" onclick="onclickfilter()">
         </div>
         <table class="table">
             <tr>
@@ -49,7 +49,45 @@
             </tr>
         </table>
     </div>
+    <script>
+        var input, table, tr, td;
+        var today = new Date(); //getting the todays date
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0');
+        var yyyy = today.getFullYear();
+        today = yyyy + '-' + mm + '-' + dd;
 
+        fetchres = fetch("http://localhost/mark/getall")
+        document.getElementsByClassName("daterange")[0].value = today
+        input = document.getElementsByClassName("daterange")[0].value;
+        table = document.getElementsByClassName("table")[0];
+        tr = document.createElement("tr")
+        td = document.createElement("td")
+        td.innerHTML = "21051275"
+        tr.appendChild(td)
+        td = document.createElement("td")
+        td.innerHTML = "vinit"
+        tr.appendChild(td)
+        td = document.createElement("td")
+        td.innerHTML = "cse"
+        tr.appendChild(td)
+        td = document.createElement("td")
+        td.innerHTML = "date"
+        tr.appendChild(td)
+        td = document.createElement("td")
+        td.innerHTML = "time"
+        tr.appendChild(td)
+        table.appendChild(tr)
+
+        function onclickfilter() {
+            input = document.getElementsByClassName("daterange")[0].value;
+            for (let i = 0; i < tr.length; i++) {
+                if (td = table) {
+
+                }
+            }
+        }
+    </script>
 
 
 </body>
