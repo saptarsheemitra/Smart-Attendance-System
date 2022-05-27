@@ -1,7 +1,7 @@
 api documentation
 
 *all the request except the report generation should be a post request
-
+*to run the server just type npm run server in the terminal below
 
 
 to mark present:
