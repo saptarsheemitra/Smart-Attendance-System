@@ -41,7 +41,18 @@ function getreport(req,res){
         res.json(out);
     })
 }
+function getallreport(req,res){
+    var out = []
+    dbcon.execute(`select roll,name,cast(mdate as date) as date,cast(mdate as time) as time,status from studentdb`).then((result)=>{
+        result[0].forEach(element => {
+            element.date = moment(element.date).format("DD-MM-YYYY")
+            out.push(element)
+        });
+        res.json(out);
+    })
+}
 exports.login = login;
 exports.markpresent = markpresent
 exports.markabsent = markabsent
 exports.getdata = getreport
+exports.getalldata = getallreport

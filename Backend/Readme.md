@@ -21,7 +21,7 @@ to mark present:
 to mark absent:
     url: http://<host>/mark/markabsent
     url demo: http://localhost/mark/markpresent
-    demo post data json:-
+    demo request data json:-
         {
             "rollno":"21051275",
             "name":"vinit agarwal",
@@ -30,6 +30,21 @@ to mark absent:
     demo outputs:-
         21051275 already marked
         21051275 marked absent
+
+to get all the data saved
+    url: http://<host>/mark/getall
+    url demo: http://localhost/mark/getall
+    demo outputs:-
+        *the output is return in json array and other format required should be informed
+        [
+            {
+                "roll": "21051276",
+                "name": "vinit agarwal",
+                "date": "13-02-2020",
+                "time": "12:02:00",
+                "status": "absent"
+            }
+        ]
 
 
 to generate reort:-
