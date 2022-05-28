@@ -96,20 +96,16 @@ The control center of the application. It allows users to manage the diseases & 
 ![Database](https://github.com/saptarsheemitra/Envisage22/blob/main/Projectimg/database.png)
 
 ### Training models
-![models](https://github.com/saptarsheemitra/Envisage22/blob/main/Projectimg/database.png)
-
-
-# Known bugs :bug:
-1. On some mobiles devices (iPhone, iPad) assigning rooms to patients is not working because mobile browsers doesn’t interpret the double-click. Also, the user can’t enter the patient's page because of the same reason. However, on LG mobile devices this feature works. 
+![models](https://github.com/saptarsheemitra/Envisage22/blob/main/Projectimg/Training%20Models.png)
 
 # License 
 Need to add here some thing :money_with_wings:
 
 # Team Members
 1. **Saptarshee Mitra**: saptarshee08@gmail.com  
+4. **Anupam Moharana**: anupam205@outlook.com
 2. **Vinit Agarwal**:
 3. **Achyut Vardhan**: achyutvardhan234@gmail.com
-4. **Anupam Moharana**: 
 
 
 
