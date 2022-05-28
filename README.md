@@ -87,13 +87,17 @@ The control center of the application. It allows users to manage the diseases & 
 # Technologies
 
 ### Backend
-![Nodejs - ExpressJS](https://github.com/margiki/NHS-nodejs-webapp/blob/master/github_readme_photos/backend.jpg)
+![Backend Stack](https://github.com/saptarsheemitra/Envisage22/blob/main/Projectimg/backend%20stack.png)
 
 ### Frontend
-![jQuery](https://github.com/margiki/NHS-nodejs-webapp/blob/master/github_readme_photos/frontend.jpg)
+![Frontend Stack](https://github.com/saptarsheemitra/Envisage22/blob/main/Projectimg/Frontend%20stack.png)
 
 ### Database
-![MongoDB - Mongoose](https://github.com/margiki/NHS-nodejs-webapp/blob/master/github_readme_photos/database.jpg)
+![Database](https://github.com/saptarsheemitra/Envisage22/blob/main/Projectimg/database.png)
+
+### Training models
+![models](https://github.com/saptarsheemitra/Envisage22/blob/main/Projectimg/database.png)
+
 
 # Known bugs :bug:
 1. On some mobiles devices (iPhone, iPad) assigning rooms to patients is not working because mobile browsers doesn’t interpret the double-click. Also, the user can’t enter the patient's page because of the same reason. However, on LG mobile devices this feature works. 
