@@ -85,22 +85,18 @@ The control center of the application. It allows users to manage the diseases & 
 ### Database
 ![MongoDB - Mongoose](https://github.com/margiki/NHS-nodejs-webapp/blob/master/github_readme_photos/database.jpg)
 
-### Databse Schema
-![Database schema](https://github.com/margiki/NHS-nodejs-webapp/blob/master/github_readme_photos/database_design.jpg)
-
-**The available application is connected to a MongoDB database online.** If you want to change the database to another one, you need to go: NHS app folder -> server -> db -> mongoose.js
-
-Inside the file, you need to change the database link from
-mongoose.connect("mongodb://admin:admin123@ds145220.mlab.com:45220/nhs-app"); to mongoose.connect("your-database-link");
-
 # Known bugs :bug:
 1. On some mobiles devices (iPhone, iPad) assigning rooms to patients is not working because mobile browsers doesn’t interpret the double-click. Also, the user can’t enter the patient's page because of the same reason. However, on LG mobile devices this feature works. 
 
 # License 
-Free to use, copy and distribute. :money_with_wings:
+Need to add here some thing :money_with_wings:
+
+# Team Members
+1. **Saptarshee Mitra**: saptarshee08@gmail.com  
+2. **Vinit Agarwal**:
+3. **Achyut Vardhan**: 
+4. **Anupam Moharana**: 
 
 
 
-
-
-
+ 
