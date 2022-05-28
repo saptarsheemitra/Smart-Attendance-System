@@ -1,8 +1,8 @@
 # EVG ID:
-Vinit Agarwal: 22EVGVZR226433
-Achyut Vardhan: 22EVGEVV570567
-Anupam Moharana: 22EVG2YZ480746
-Saptarshee Mitra: 22EVGPKB426094
+1. Vinit Agarwal: 22EVGVZR226433 
+2. Achyut Vardhan: 22EVGEVV570567
+3. Anupam Moharana: 22EVG2YZ480746
+4. Saptarshee Mitra: 22EVGPKB426094 (Leader)
 
 ![App picture](https://github.com/margiki/NHS-nodejs-webapp/blob/master/github_readme_photos/main_picture.jpg)
 
@@ -42,7 +42,7 @@ git clone https://github.com/saptarsheemitra/Envisage22.git
 4.	Now make sure you are in backend folder. To open the application, type ‘npm run server’ and press Enter in the terminal.
 5.	The application should be live on the local port 8080.  
 6.	Now go to face recognition folder and open attendance.py.
-#### If all the packages got installed currectly the program should run without any problem.
+#### **If all the packages got installed currectly the program should run without any problem.
 
 
 # How to use it :book:
