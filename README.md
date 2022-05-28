@@ -15,6 +15,7 @@ Whenever a registered person enters the premises, the system recognises him and 
 
 **Username: admin**
 **Password: admin**
+
 <!-- # Youtube video
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=Q9wTakyRWi4
 " target="_blank"><img src="http://img.youtube.com/vi/Q9wTakyRWi4/0.jpg" 
