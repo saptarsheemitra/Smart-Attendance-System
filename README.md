@@ -46,11 +46,11 @@ git clone https://github.com/saptarsheemitra/Envisage22.git
 
 
 # How to use it :book:
-### Dashboard
+### Node Server
 
 Data about patients and rooms is available here. The page is split into three tables. 
 
-![Dashboard](https://github.com/margiki/NHS-nodejs-webapp/blob/master/github_readme_photos/dashboard.jpg)
+![NodeServer](https://github.com/saptarsheemitra/Envisage22/blob/main/Projectimg/Nodeserver.png)
 
 ![Dashboard](https://github.com/margiki/NHS-nodejs-webapp/blob/master/github_readme_photos/dasboard_2.jpg)
 
