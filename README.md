@@ -1,3 +1,4 @@
+# Hands-free Attendance System
 # EVG IDs:
 1. Vinit Agarwal: 22EVGVZR226433 
 2. Achyut Vardhan: 22EVGEVV570567
@@ -14,10 +15,10 @@ Whenever a registered person enters the premises, the system recognises him and 
 
 **Username: admin**
 **Password: admin**
-# Youtube video
+<!-- # Youtube video
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=Q9wTakyRWi4
 " target="_blank"><img src="http://img.youtube.com/vi/Q9wTakyRWi4/0.jpg" 
-alt="Youtube video" width="240" height="180" border="10" /></a>
+alt="Youtube video" width="240" height="180" border="10" /></a> -->
 
 # Prerequisites
 - [x] Node.js 14 or later - install from https://nodejs.org/
