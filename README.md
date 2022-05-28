@@ -60,7 +60,7 @@ Open terminal in VS Code then type "npm run server". This should start your node
 
 ### Face Detection working
 
-Open Face Recognition folder then open attendance.py and run the file. 
+Open Face Recognition folder then open attendance.py and run the file. To close the camera window just press "Enter Key" on keyboard
 
 ![Face Detection](https://github.com/saptarsheemitra/Envisage22/blob/main/Projectimg/Face%20Detection%20working.png)
 
