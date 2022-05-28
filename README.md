@@ -104,7 +104,7 @@ Need to add here some thing :money_with_wings:
 # Team Members
 1. **Saptarshee Mitra**: saptarshee08@gmail.com  
 2. **Vinit Agarwal**:
-3. **Achyut Vardhan**: 
+3. **Achyut Vardhan**: achyutvardhan234@gmail.com
 4. **Anupam Moharana**: 
 
 
