@@ -1,0 +1,52 @@
+    * {
+        background-color: whitesmoke;
+        width: 100%;
+    }
+    
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    .flex-1 {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        margin-left: 1%;
+    }
+    
+    .button {
+        width: 100px;
+        margin-left: 20px;
+        text-align: center;
+        border-radius: 10px;
+        border: 1px solid aqua;
+        height: 30px;
+        background-color: aqua;
+        font-family: 'Manrope', sans-serif;
+        font-size: small;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+    }
+    
+    .heading {
+        text-align: center;
+        font-family: 'Manrope', sans-serif;
+        font-size: 500;
+    }
+    
+    .daterange {
+        width: 250px;
+        text-align: center;
+        border-radius: 10px;
+        border: 2px solid rgb(4, 4, 4);
+        height: 30px;
+    }
+    
+    .button:hover {
+        background-color: rgb(68, 194, 194);
+        font-size: medium;
+    }

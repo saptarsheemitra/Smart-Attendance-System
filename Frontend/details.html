@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/webtable.css">
+    <link rel="stylesheet" href="./css/table.css">
+    <title>Attendance Details</title>
+</head>
+
+<body>
+    <div class="flex">
+        <h1 class="heading">Student Attendance Details</h1>
+        <h5 style="  margin-bottom: 2px; margin-top: 30px;margin-right: 6%; width: auto;">*Select date to view
+            attendance</h5>
+        <div class="flex-1">
+            <input type="date" name="daterange" placeholder="01/01/2018 " class="daterange" />
+            <input type="submit" value="Filter" class="button" onclick="onclickfilter()">
+            <input type="submit" value="Clear" class="button" onclick="onclickclear()">
+        </div>
+        <table class="table">
+            <tr>
+                <th>ROLL NO</th>
+                <th>STUDENT's NAME</th>
+                <th>BRANCH</th>
+                <th>DATE</th>
+                <th>TIME</th>
+                <th>STATUS</th>
+            </tr>
+        </table>
+    </div>
+    <script>
+        var input, table, tr, td;
+        var today = new Date(); //getting the todays date
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0');
+        var yyyy = today.getFullYear();
+        today = yyyy + '-' + mm + '-' + dd;
+        document.getElementsByClassName("daterange")[0].value = today
+        input = document.getElementsByClassName("daterange")[0].value;
+        table = document.getElementsByClassName("table")[0];
+        fetchres = fetch("http://localhost:8080/mark/getall")
+        cleartable()
+        fetchres.then(res =>
+            res.json()).then(d => {
+                d.forEach(element => {
+                    console.log(element)
+                    
+                    tr = document.createElement("tr")
+                    if(element.status == "absent"){
+                            tr.style.color = "#bf483f"
+                        }else{
+                            tr.style.color = "#60c738"
+                        }
+                    td = document.createElement("td")
+                    td.innerHTML = element.roll
+                    tr.appendChild(td)
+                    td = document.createElement("td")
+                    td.innerHTML = element.name
+                    tr.appendChild(td)
+                    td = document.createElement("td")
+                    td.innerHTML = element.branch
+                    tr.appendChild(td)
+                    td = document.createElement("td")
+                    td.innerHTML = element.date
+                    tr.appendChild(td)
+                    td = document.createElement("td")
+                    td.innerHTML = element.time
+                    tr.appendChild(td)
+                    td = document.createElement("td")
+                    td.innerHTML = element.status
+                    tr.appendChild(td)
+                    table.appendChild(tr)
+                });
+            })
+        function onclickfilter() {
+            input = document.getElementsByClassName("daterange")[0].value;
+            cleartable()
+            console.log(input);
+            fetchres = fetch(`http://localhost:8080/mark/get?date=${input}`)
+            fetchres.then(res =>
+                res.json()).then(d => {
+                    console.log(d)
+                    d.forEach(element => {
+                        console.log(element)
+                        tr = document.createElement("tr")
+                        if(element.status == "absent"){
+                            tr.style.color = "#bf483f"
+                        }else{
+                            tr.style.color = "#60c738"
+                        }
+                        td = document.createElement("td")
+                        td.innerHTML = element.roll
+                        tr.appendChild(td)
+                        td = document.createElement("td")
+                        td.innerHTML = element.name
+                        tr.appendChild(td)
+                        td = document.createElement("td")
+                        td.innerHTML = element.branch
+                        tr.appendChild(td)
+                        td = document.createElement("td")
+                        td.innerHTML = element.date
+                        tr.appendChild(td)
+                        td = document.createElement("td")
+                        td.innerHTML = element.time
+                        tr.appendChild(td)
+                        td = document.createElement("td")
+                        td.innerHTML = element.status
+                        tr.appendChild(td)
+                        table.appendChild(tr)
+                    });
+                })
+        }
+
+        function onclickclear() {
+            input = document.getElementsByClassName("daterange")[0].value;
+            cleartable()
+            console.log(input);
+            fetchres = fetch(`http://localhost:8080/mark/getall`)
+            fetchres.then(res =>
+                res.json()).then(d => {
+                    console.log(d)
+                    d.forEach(element => {
+                        console.log(element)
+                        tr = document.createElement("tr")
+                        if (element.status == "absent") {
+                            tr.style.color = "#bf483f"
+                        } else {
+                            tr.style.color = "#60c738"
+                        }
+                        td = document.createElement("td")
+                        td.innerHTML = element.roll
+                        tr.appendChild(td)
+                        td = document.createElement("td")
+                        td.innerHTML = element.name
+                        tr.appendChild(td)
+                        td = document.createElement("td")
+                        td.innerHTML = element.branch
+                        tr.appendChild(td)
+                        td = document.createElement("td")
+                        td.innerHTML = element.date
+                        tr.appendChild(td)
+                        td = document.createElement("td")
+                        td.innerHTML = element.time
+                        tr.appendChild(td)
+                        td = document.createElement("td")
+                        td.innerHTML = element.status
+                        tr.appendChild(td)
+                        table.appendChild(tr)
+                    });
+                })
+        }
+
+        function cleartable() {
+            table = document.getElementsByClassName("table")[0];
+            table.innerHTML = ""
+            tr = document.createElement("tr")
+            th = document.createElement("th")
+            th.innerHTML = "Roll No."
+            tr.appendChild(th)
+            th = document.createElement("th")
+            th.innerHTML = "Name"
+            tr.appendChild(th)
+            th = document.createElement("th")
+            th.innerHTML = "Branch"
+            tr.appendChild(th)
+            th = document.createElement("th")
+            th.innerHTML = "Date"
+            tr.appendChild(th)
+            th = document.createElement("th")
+            th.innerHTML = "Time"
+            tr.appendChild(th)
+            th = document.createElement("th")
+            th.innerHTML = "Status"
+            tr.appendChild(th)
+            table.appendChild(tr)
+        }
+    </script>
+
+
+</body>
+
+</html>
