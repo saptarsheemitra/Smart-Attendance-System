@@ -4,12 +4,11 @@
 3. Anupam Moharana: 22EVG2YZ480746
 4. Saptarshee Mitra: 22EVGPKB426094 (Leader)
 
-![App picture](https://github.com/margiki/NHS-nodejs-webapp/blob/master/github_readme_photos/main_picture.jpg)
+![App picture](https://github.com/saptarsheemitra/Envisage22/blob/main/Projectimg/Project.png)
 
 # Description :point_left:
-It's a web application for managing hospitals rooms and determining the patient's priority for isolation. The app provides a centralised hub for managing the patients and planning their distribution across hospital’s rooms. 
-
-It allows nurses to keep track of the patients and their diseases in real time and to have an overview over the patients and rooms, and better manage the rooms assignment across patients.
+This system was created to provide a simple and secure method of recording attendance. The software initially takes a picture of all of the authorised people and stores it in a database. The image is then stored by mapping it into a face coordinate structure by the system. 
+Whenever a registered person enters the premises, the system recognises him and records his time and attendance.
 
 
 # Youtube video
@@ -52,26 +51,37 @@ Data about patients and rooms is available here. The page is split into three ta
 
 ![NodeServer](https://github.com/saptarsheemitra/Envisage22/blob/main/Projectimg/Nodeserver.png)
 
-![Dashboard](https://github.com/margiki/NHS-nodejs-webapp/blob/master/github_readme_photos/dasboard_2.jpg)
 
 To clear the red warning sign you need to go on the patient’s personal page. To do that, you have to double click on his name. By clicking on the ‘Update button’ on the bottom of the page, the patient’s diagnosis in updated for the next 24 hours (consequently, the red warning sign disappears).
 
-### Add patient page
+### Face Detection working
 
 You can add a new patient in the system with his personal details and his diseases. The application automatically computes the score of the patient based on the entered diseases
 
-![Add patient page](https://github.com/margiki/NHS-nodejs-webapp/blob/master/github_readme_photos/add_new_patient.jpg)
+![Face Detection](https://github.com/saptarsheemitra/Envisage22/blob/main/Projectimg/Face%20Detection%20working.png)
 
-### Patient page
+### How to add new students
 
 Double click on a patient name on the dashboard to get here.
-![Patient page](https://github.com/margiki/NHS-nodejs-webapp/blob/master/github_readme_photos/patient_page.jpg)
+![Add Student](https://github.com/margiki/NHS-nodejs-webapp/blob/master/github_readme_photos/patient_page.jpg)
 
-### System settings
+### How to access frontend
 
 The control center of the application. It allows users to manage the diseases & rooms of the Hospital and create new accounts
 
-![System Settings](https://github.com/margiki/NHS-nodejs-webapp/blob/master/github_readme_photos/system_settings.jpg)
+![Frontend files](https://github.com/saptarsheemitra/Envisage22/blob/main/Projectimg/frontend.png)
+
+### Login Page
+
+The control center of the application. It allows users to manage the diseases & rooms of the Hospital and create new accounts
+
+![Login page](https://github.com/saptarsheemitra/Envisage22/blob/main/Projectimg/login%20page.png)
+
+### Student Attendance Details page
+
+The control center of the application. It allows users to manage the diseases & rooms of the Hospital and create new accounts
+
+![Attendance Details](https://github.com/saptarsheemitra/Envisage22/blob/main/Projectimg/attendance%20table.png)
 
 
 # Technologies
