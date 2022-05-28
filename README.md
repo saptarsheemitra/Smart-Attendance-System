@@ -10,7 +10,10 @@
 This system was created to provide a simple and secure method of recording attendance. The software initially takes a picture of all of the authorised people and stores it in a database. The image is then stored by mapping it into a face coordinate structure by the system. 
 Whenever a registered person enters the premises, the system recognises him and records his time and attendance.
 
+### Credentials for frontend login page
 
+**Username: admin**
+**Password: admin**
 # Youtube video
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=Q9wTakyRWi4
 " target="_blank"><img src="http://img.youtube.com/vi/Q9wTakyRWi4/0.jpg" 
@@ -47,44 +50,46 @@ git clone https://github.com/saptarsheemitra/Envisage22.git
 # How to use it :book:
 ### Node Server
 
-Data about patients and rooms is available here. The page is split into three tables. 
+Open terminal in VS Code then type "npm run server". This should start your node server if you have installed all the packages
 
 ![NodeServer](https://github.com/saptarsheemitra/Envisage22/blob/main/Projectimg/Nodeserver.png)
 
 
-To clear the red warning sign you need to go on the patient’s personal page. To do that, you have to double click on his name. By clicking on the ‘Update button’ on the bottom of the page, the patient’s diagnosis in updated for the next 24 hours (consequently, the red warning sign disappears).
 
 ### Face Detection working
 
-You can add a new patient in the system with his personal details and his diseases. The application automatically computes the score of the patient based on the entered diseases
+Open Face Recognition folder then open attendance.py and run the file. 
 
 ![Face Detection](https://github.com/saptarsheemitra/Envisage22/blob/main/Projectimg/Face%20Detection%20working.png)
 
 ### How to add new students
 
-Double click on a patient name on the dashboard to get here.
-![Add Student](https://github.com/margiki/NHS-nodejs-webapp/blob/master/github_readme_photos/patient_page.jpg)
+To add a new student copy the picture of the student into the image folder with this convention "Roll_Name_branch.jpg"
+
+![Add Student](https://github.com/saptarsheemitra/Envisage22/blob/main/Projectimg/Add%20student.png)
 
 ### How to access frontend
 
-The control center of the application. It allows users to manage the diseases & rooms of the Hospital and create new accounts
+Open Frontend folder then oprn index.html. Now a login page should popup.
 
 ![Frontend files](https://github.com/saptarsheemitra/Envisage22/blob/main/Projectimg/frontend.png)
 
 ### Login Page
 
-The control center of the application. It allows users to manage the diseases & rooms of the Hospital and create new accounts
+**Username: admin**
+**Password: admin**
+Now enter Username & Password to proceed to the attendace details.
 
 ![Login page](https://github.com/saptarsheemitra/Envisage22/blob/main/Projectimg/login%20page.png)
 
 ### Student Attendance Details page
 
-The control center of the application. It allows users to manage the diseases & rooms of the Hospital and create new accounts
+Now to view student attendance details select a valid date and press filter.
 
 ![Attendance Details](https://github.com/saptarsheemitra/Envisage22/blob/main/Projectimg/attendance%20table.png)
 
 
-# Technologies
+# Technologies Used
 
 ### Backend
 ![Backend Stack](https://github.com/saptarsheemitra/Envisage22/blob/main/Projectimg/backend%20stack.png)
@@ -99,12 +104,13 @@ The control center of the application. It allows users to manage the diseases & 
 ![models](https://github.com/saptarsheemitra/Envisage22/blob/main/Projectimg/Training%20Models.png)
 
 # License 
-Need to add here some thing :money_with_wings:
+You must not reproduce and distribute copies of the work or derivative works thereof in any medium, with or without
+modifications, and in Source or Object form.
 
 # Team Members
 1. **Saptarshee Mitra**: saptarshee08@gmail.com  
 4. **Anupam Moharana**: anupam205@outlook.com
-2. **Vinit Agarwal**:
+2. **Vinit Agarwal**: vinitagarwal.garg@gmail.com
 3. **Achyut Vardhan**: achyutvardhan234@gmail.com
 
 
