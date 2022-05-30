@@ -46,7 +46,7 @@ git clone https://github.com/saptarsheemitra/Envisage22.git
 4.	Now make sure you are in backend folder. To open the application, type ‘npm run server’ and press Enter in the terminal.
 5.	The application should be live on the local port 8080.  
 6.	Now go to face recognition folder and open attendance.py.
-#### **If all the packages got installed currectly the program should run without any problem.
+#### **If all the packages got installed correctly the program should run without any problem.
 
 
 # How to use it :book:
