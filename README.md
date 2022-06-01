@@ -110,11 +110,10 @@ You must not reproduce and distribute copies of the work or derivative works the
 modifications, and in Source or Object form.
 
 # Team Members
-1. **Saptarshee Mitra**: saptarshee08@gmail.com  
-2. ** [Saptarshee Mitra](https://www.linkedin.com/in/saptarsheemitra/)
-4. **Anupam Moharana**: anupam205@outlook.com
-4. **Vinit Agarwal**: vinitagarwal.garg@gmail.com
-5. **Achyut Vardhan**: achyutvardhan234@gmail.com
+1. **Saptarshee Mitra**: saptarshee08@gmail.com  [Linkedin](https://www.linkedin.com/in/saptarsheemitra/) [Instagram](https://www.instagram.com/saptarsheemitra/)
+2. **Anupam Moharana**: anupam205@outlook.com
+3. **Vinit Agarwal**: vinitagarwal.garg@gmail.com
+4. **Achyut Vardhan**: achyutvardhan234@gmail.com
 
 
 
