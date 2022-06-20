@@ -1,9 +1,4 @@
-# Hands-free Attendance System
-# EVG IDs:
-1. Vinit Agarwal: 22EVGVZR226433 
-2. Achyut Vardhan: 22EVGEVV570567
-3. Anupam Moharana: 22EVG2YZ480746
-4. Saptarshee Mitra: 22EVGPKB426094 (Leader)
+# Smart Attendance System
 
 ![App picture](https://github.com/saptarsheemitra/Envisage22/blob/main/Projectimg/Project.png)
 
